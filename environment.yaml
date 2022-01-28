@@ -1,0 +1,26 @@
+name: neuraldiff
+channels:
+  - plotly
+  - conda-forge
+  - anaconda
+  - defaults
+dependencies:
+  - pip=21.0.1=py37h06a4308_0
+  - matplotlib-base=3.3.3=py37h4f6019d_0
+  - ffmpeg=4.2.2=h20bf706_0
+  - pip:
+    - numpy==1.20.1
+    - pytorch-lightning==1.1.5
+    - torch==1.7.1
+    - torchvision==0.8.2
+    - gitpython==3.1.14
+    - einops==0.3.0
+    - cvbase==0.5.5
+    - opencv-python==4.5.1.48
+    - kornia==0.4.1
+    - imageio==2.9.0
+    - scikit-image==0.18.1
+    - scikit-learn==0.24.1
+    - scipy==1.6.1
+    - test-tube==0.7.5
+    - imageio-ffmpeg==0.4.2

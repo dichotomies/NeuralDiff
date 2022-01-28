@@ -1,0 +1,10 @@
+logs/
+ckpts/
+results/
+data/
+*.mp4
+*.pt
+
+__pycache__/
+*.py[cod]
+*$py.class
