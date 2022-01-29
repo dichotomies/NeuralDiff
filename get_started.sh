@@ -21,13 +21,8 @@ for X in $(ls $EKPATH);
   do echo $X;
   for Z in $(ls $EKPATH/$X);
     do echo $Z;
-    # ln -s $PWD/$EKPATH/$X/$Z EPIC-Diff/$X
     mv $PWD/$EKPATH/$X/$Z EPIC-Diff/$X
-    # unlink EPIC-Diff/$X/$Z
   done;
 done
-
-# unlink EPIC-Diff/readme.txt
-# ln -s $PWD/$EKPATH/readme.txt EPIC-Diff/README_EPIC-Kitchens.txt
 
 mv $PWD/$EKPATH/readme.txt EPIC-Diff/README_EPIC-Kitchens.txt
