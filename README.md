@@ -11,7 +11,7 @@ This repository contains the official implementation of the paper *NeuralDiff: S
 
 Given a raw video sequence taken from a freely-moving camera, we study the problem of decomposing the observed 3D scene into a static background and a dynamic foreground containing the objects that move in the video sequence. This task is reminiscent of the classic background subtraction problem, but is significantly harder because all parts of the scene, static and dynamic, generate a large apparent motion due to the camera large viewpoint change. In particular, we consider egocentric videos and further separate the dynamic component into objects and the actor that observes and moves them. We achieve this factorization by reconstructing the video via a triple-stream neural rendering network that explains the different motions based on corresponding inductive biases. We demonstrate that our method can successfully separate the different types of motion, outperforming recent neural rendering baselines at this task, and can accurately segment moving objects. We do so by assessing the method empirically on challenging videos from the EPIC-KITCHENS dataset which we augment with appropriate annotations to create a new benchmark for the task of dynamic object segmentation on unconstrained video sequences, for complex 3D environments.
 
-## Installation
+## Getting started
 
 We provide an environment config file for [anaconda](https://www.anaconda.com/). You can install and activate it with the following commands:
 
@@ -19,6 +19,8 @@ We provide an environment config file for [anaconda](https://www.anaconda.com/).
 conda env create -f environment.yaml
 conda activate neuraldiff
 ```
+
+After that, you can initialise the repository with pretrained models and the data through `sh get_started.sh` (this will download and extract everything you need to train and evaluate models). After that you can proceed directly to **Reproducing results**. If you should have any trouble with that, then initialise the repository manually as described in the next sections (**Dataset**, **Pretrained models**).
 
 ## Dataset
 
