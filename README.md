@@ -24,6 +24,8 @@ After that, you can initialise the repository with pretrained models and the dat
 
 ## Dataset
 
+### EPIC-Diff
+
 The EPIC-Diff dataset can be downloaded [here](https://www.robots.ox.ac.uk/~vadim/neuraldiff/release/EPIC-Diff-annotations.tar.gz).
 
 After downloading, move the compressed dataset to the directory of the cloned repository (e.g. `NeuralDiff`). Then, apply following commands:
@@ -36,6 +38,18 @@ tar -xzvf EPIC-Diff.tar.gz
 ```
 
 The RGB frames are hosted separately as a subset from the [EPIC-Kitchens](https://epic-kitchens.github.io/2022) dataset. The data are available at the University of Bristol [data repository](https://doi.org/10.5523/bris.296c4vv03j7lb2ejq3874ej3vm), data.bris. Once downloaded, move the folders into the same directory as mentioned before (`data/EPIC-Diff`).
+
+### Your own data
+
+We include a script that converts COLMAP models to our data format. An example command would be:
+
+```
+python -m colmap_converter --colmap_dir <path/to/model> --scale=8
+```
+
+The colmap dir should contain the folder `images` and the sparse model in `sparse/0`. You can also choose to down-scale the images via the scale argument.
+
+The script switches to GPU computation if you are using more than 1000 images to speed up the formatting.
 
 ## Pretrained models
 
