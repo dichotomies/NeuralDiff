@@ -5,6 +5,10 @@
 
 ![teaser](https://user-images.githubusercontent.com/12436822/147008441-f294a1e1-1de6-4ee1-b7c0-9872cac4f953.gif)
 
+## Updates
+
+18.05.22: You can now convert your own COLMAP models to our data format and start training with it straight away. See [here](https://github.com/dichotomies/NeuralDiff/edit/master/README.md#your-own-data) for more details.
+
 ## About
 
 This repository contains the official implementation of the paper *NeuralDiff: Segmenting 3D objects that move in egocentric videos* by [Vadim Tschernezki](https://github.com/dichotomies), [Diane Larlus](https://dlarlus.github.io/) and [Andrea Vedaldi](https://www.robots.ox.ac.uk/~vedaldi/). Published at 3DV21.
