@@ -7,7 +7,7 @@
 
 ## Updates
 
-18.05.22: You can now convert your own COLMAP models to our data format and start training with it straight away. See [here](https://github.com/dichotomies/NeuralDiff/edit/master/README.md#your-own-data) for more details.
+18.05.22: You can now convert your own COLMAP models to our data format and start training with it straight away. See [here](https://github.com/dichotomies/NeuralDiff#your-own-data) for more details.
 
 ## About
 
